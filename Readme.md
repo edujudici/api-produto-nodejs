@@ -41,10 +41,10 @@ CONTAINER ID        IMAGE                  COMMAND                  CREATED     
 ## Realizando o deploy do serviço
 
 ```console
-kubectl apply -f ./ -R
+kubectl apply -f k8s -R
 ```
 ```
-➜  kind kubectl apply -f ./ -R
+➜  kind kubectl apply -f k8s -R
 deployment.apps/api-deployment created
 service/api-service created
 deployment.apps/mongodb-deployment created
@@ -74,6 +74,7 @@ replicaset.apps/mongodb-deployment-6b7bd66f46   1         1         1       82m
 ## Acessando a aplicação
 ```
 localhost:8080/api-docs
+localhost:8080/helth
 ```
 
 ## Referências
